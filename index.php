@@ -1,6 +1,5 @@
 <?php
 $connection = mysqli_connect("localhost","root","","wordpress");
-
 ?>
 
 <!DOCTYPE html>
@@ -65,6 +64,6 @@ if(isset($_GET['search']) && !empty($_GET['query']))
 		{
 			echo "<a href='".$row['guid']."'>".$row['post_title']."</a><br>";
 		}
-	} //while loop
-} //If statement
+	}
+}
 ?>
